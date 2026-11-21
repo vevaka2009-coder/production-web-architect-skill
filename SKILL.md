@@ -1,63 +1,35 @@
 ---
 name: production-web-architect
-description: Production-grade web architecture, security audit, and AI "vibe-coding" anti-pattern defense skill. Detects IDOR vulnerabilities, missing database migrations, serverless connection pool starvation, optimistic UI rollbacks, mobile viewports (100dvh), accessibility, rate limiting, and blueprints standard subsystems (Landing Page, Dashboard, Settings, Updates/Changelog, Inbox/Notifications, Meta/SEO).
+description: Purpose-built for AI project builders and vibe-coders. Detects, reports, and corrects everything you or the AI forgot to build in your web application—including IDOR security vulnerabilities, database connection pool exhaustion, missing zero-downtime migrations, broken mobile viewports (100dvh), missing error boundaries, and standard subsystems (Settings, Inboxes, Updates/Changelogs, Dashboards, and Dynamic OpenGraph SEO).
 metadata:
   author: vevaka2009-coder
   version: 1.0.0
   tags:
-    - web-architecture
+    - vibe-coding
+    - ai-builders
     - security-audit
-    - vibe-coding-remedy
+    - web-architecture
     - multi-agent-orchestration
-    - full-stack-standards
 ---
 
 # Production Web Architect & Vibe-Coding Guard
 
-This skill empowers AI agents to audit, architect, and harden web applications against the systematic blindspots introduced by AI code generation and rapid "vibe-coding".
+Built specifically for **AI project builders and vibe-coders** who create applications using AI tools (Cursor, v0, Bolt, Lovable, Devin, Replit, Claude, ChatGPT). It automatically inspects your repository, tells you what was missed or neglected, and writes the code and architecture plans to correct it.
 
 ## When to Activate This Skill
-Activate this skill whenever:
-- Auditing an existing codebase for production readiness, scalability, and security.
-- The user asks to inspect or review a website built with AI, Cursor, v0, Bolt, Lovable, or Devin.
-- Building or refactoring standard web modules: Authentication, Dashboard, Settings, Updates/Changelog, Notifications/Inbox, or SEO/Meta engines.
-- Checking for security vulnerabilities (IDOR, leaked client secrets, token refresh race conditions, rate limit bypasses).
-- Preparing a web application for commercial launch, security compliance, or multi-tenant scaling.
+- When building a website or app using AI coding tools or "vibe-coding" and wanting a comprehensive production-readiness check.
+- When an AI-generated app works on the happy path, but needs production hardening (security, database scaling, error handling, responsiveness).
+- When scaffolding or verifying standard subsystems: Landing vs. App Home, Dashboard, Settings (Profile, Security, Preferences, Billing, API Keys), Updates/Changelog, Inbox/Notifications, or SEO/Meta engines.
+- To detect and fix silent vulnerabilities: IDOR, leaked secrets in frontend bundles, token refresh race conditions, connection pool starvation, and unhandled optimistic UI errors.
 
 ## Core Capabilities
-
-### 1. 6-Pillar Production Readiness Audit
-The skill provides a rigorous inspection protocol across:
-1. **Security & Identity Governance:** Multi-tenant scoping (IDOR elimination), client bundle secret audits, HttpOnly cookie auth, token refresh mutex queues, CORS/CSRF headers, sliding-window rate limiters, and prompt/output sanitization.
-2. **Data Integrity & State:** Versioned zero-downtime migrations (Expand/Contract pattern), serverless connection poolers (PgBouncer/Supabase Pooler), atomic counter updates, optimistic UI error rollbacks, and null-safe object traversal.
-3. **UX Resilience & Viewports:** Granular React Error Boundaries, mobile dynamic viewports (`100dvh`), semantic HTML with WCAG ARIA attributes, fixed-aspect-ratio skeleton loaders (CLS < 0.1), and flash-free theme scripts.
-4. **Performance & Resources:** Mandatory cursor/limit pagination, cleanup functions on async event/socket listeners, eager-loading relations to eliminate N+1 queries, and code-split bundles.
-5. **SEO, Legal & Operations:** Dynamic OpenGraph image generation (`1200x630`), canonical tags, dynamic `sitemap.xml`, Consent Mode v2, webhook HMAC verification with idempotency tables, and structured health check endpoints (`/api/health`).
-6. **Standard Subsystem Blueprinting:** High-fidelity architectural specifications for Landing vs. Logged-in Home, Dashboard, Settings (Profile, Security/2FA, Preferences, Billing, API Keys), Updates/Changelog, Inbox/Notifications, and Dynamic Captions/SEO.
-
-### 2. Multi-Agent Swarm Orchestration Mode
-When operating in an agent runtime capable of spawning sub-agents (Antigravity Swarms, Claude Code, Devin subtasks, CrewAI, AutoGen):
-- Dispatches parallel audit workers:
-  * `agent-sec-auth` (Security & Auth)
-  * `agent-data-db` (Database, Migrations & State)
-  * `agent-ux-a11y` (UX, Viewports & Accessibility)
-  * `agent-perf-ops` (Performance, Webhooks & Ops)
-  * `agent-subsystems` (Core Web Views & Engines)
-- Aggregates findings into an executive scorecard and issues task-specific implementation briefs for builder sub-agents.
-
-### 3. Single-Agent Autonomous Mode
-When running as a standalone agent or in standard chat environments:
-- Sequentially scans the project directory and files.
-- Generates a structured Compliance Matrix (`✅ Passed`, `⚠️ Partial`, `❌ Missing`).
-- Outputs a 3-phase remediation engineering roadmap tailored to the project's exact framework (Next.js, Vite, Django, Laravel, Supabase, Express, etc.).
+1. **Detects What AI Missed:** Scans the codebase across 6 essential engineering pillars and 25 critical failure modes.
+2. **Explains the Gaps:** Reports findings in plain, actionable language with file paths and risk levels (`✅ Passed`, `⚠️ Partial`, `❌ Missing`).
+3. **Corrects & Builds the Missing Pieces:** Generates tailored, copy-pasteable production implementations and migration steps for your specific framework.
+4. **Multi-Agent Orchestration:** Dispatches parallel worker sub-agents (`agent-sec-auth`, `agent-data-db`, `agent-ux-a11y`, `agent-perf-ops`, `agent-subsystems`) when running in multi-agent environments.
 
 ## Quick Command
-To run an immediate audit on the current workspace, execute the command from `commands/audit-production-readiness.md`:
+To run an instant audit on the active codebase, run the prompt in `commands/audit-production-readiness.md`:
 ```markdown
 /audit-production-readiness
 ```
-
-## References & Blueprints
-- `references/website_architecture_and_ai_pitfalls.md`: The complete 1,800+ line master reference manual detailing the top 25 AI omissions with code examples and remedies.
-- `references/database_schema_ddl.sql`: Complete PostgreSQL schema with Row-Level Security (RLS) policies.
-- `commands/audit-production-readiness.md`: The universal prompt to copy-paste into any external AI agent.
