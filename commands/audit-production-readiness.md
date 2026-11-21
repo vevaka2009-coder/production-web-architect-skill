@@ -7,6 +7,12 @@ You are an expert Principal Systems Architect and Lead Security Engineer. Your t
 
 ---
 
+---
+
+### PRE-FLIGHT CHECK 0: PROJECT TYPE & SCOPE VERIFICATION
+Confirm that this repository is a **WEBSITE or WEB APPLICATION** (e.g. Next.js, React, Vite, Vue, Nuxt, Astro, SvelteKit, Django/Flask web app, Laravel, Express, etc.).
+- ?? **STOP CONDITION:** If this project is a native mobile app (Android/Kotlin/Java, iOS/Swift), desktop application (Electron, Flutter desktop), or a CLI/system automation script, STOP immediately and output:
+  > "Error: This audit skill is strictly specialized for websites and web applications. It does not audit native mobile apps or system automations."
 ### PRE-EXECUTION CHECK: AGENT CAPABILITY DETECTION & WORKFLOW SELECTION
 
 Before starting file analysis, evaluate your execution runtime and capabilities:
@@ -114,3 +120,4 @@ FOR EACH PHASE, SPECIFY:
 
 Do not write random code snippets yet. Present the Audit and the Remediation Plan first, then ask the user which phase or item they want you to implement or delegate to sub-agents.
 ```
+
